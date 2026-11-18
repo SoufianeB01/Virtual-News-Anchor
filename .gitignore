@@ -1,0 +1,44 @@
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / Editor
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# .NET (future backend)
+bin/
+obj/
+*.user
+*.suo
+
+# Python (future LLM backend)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
