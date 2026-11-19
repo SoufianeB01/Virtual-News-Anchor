@@ -1,13 +1,18 @@
-import { Box, Typography } from '@mui/material';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import HomePage from './pages/Home/HomePage';
+import ArticlePage from './pages/Article/ArticlePage';
+import TestDID from './pages/TestDID';
 
-function App() {
+export default function App() {
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h4">
-        Virtual News Anchor
-      </Typography>
-    </Box>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/article/:id" element={<ArticlePage />} />
+        <Route path="/test-did" element={<TestDID />} />
+      </Routes>
+    </>
   );
 }
-
-export default App;

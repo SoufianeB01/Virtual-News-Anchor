@@ -1,0 +1,43 @@
+.home-page {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.home-intro {
+  margin-bottom: 32px;
+}
+
+.home-intro h4 {
+  margin-bottom: 8px;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e8e0f2;
+  border-radius: 12px;
+}
+
+.news-card .MuiButton-root {
+  margin-top: auto;
+}
+
+@media (max-width: 700px) {
+  .home-page {
+    padding-top: 32px;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+}
